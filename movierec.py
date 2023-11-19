@@ -41,11 +41,11 @@ if st.button('Show Recommendation'):
         col1, col2 = st.columns(2)
 
         with col1:
-            st.subheader(name1)
             if poster1:
-                st.image(poster1, width=200)
+                st.markdown(f'<div style="background-color: #cccccc;border:1px solid #ccc; padding:10px; display: flex; flex-direction: column; justfiy-center: center; align-items: center"><img src="{poster1}" width="325">Title<div style="padding: 10px; color: #1d1d1d; font-size: 20px; font-weight: 700"><i>{name1}</i></div></div><br/>', unsafe_allow_html=True)
+                
 
         with col2:
-            st.subheader(name2)
             if poster2:
-                st.image(poster2, width=200)
+                st.markdown(f'<div style="background-color: #cccccc;border:1px solid #ccc; padding:10px; display: flex; flex-direction: column; justfiy-center: center; align-items: center"><img src="{poster2}" width="325">Title<div style="padding: 10px; color: #1d1d1d; font-size: 20px; font-weight: 700"><i>{name2}</i></div></div><br/>', unsafe_allow_html=True)
+                
